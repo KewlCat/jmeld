@@ -1,12 +1,11 @@
-abdefc
-
-function(bar) {
-   echo bye
+function foo() {
+   print hello;
 }
 
+function bar(a, b) {
+   return a + b;
 }
 
-function(bazz) {
-   echo nothing
+function hoge() {
+   throw new Exception();
 }
-

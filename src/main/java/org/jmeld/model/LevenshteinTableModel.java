@@ -23,6 +23,11 @@ public class LevenshteinTableModel extends DefaultTableModel {
         buildModel();
     }
 
+    @Override
+    public boolean isCellEditable(int row, int column) {
+        return false;
+    }
+
     private void buildModel() {
         setDataVector(newVector(origin.length() + 2), newVector(destiny.length() + 2));
         int rowCount = getRowCount();
